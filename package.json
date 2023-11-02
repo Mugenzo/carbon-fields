@@ -1,18 +1,8 @@
 {
   "name": "carbon-fields",
+  "author": "mugenzo",
   "version": "3.6.0",
   "description": "WordPress developer-friendly custom fields for post types, taxonomy terms, users, comments, widgets, options, navigation menus and more.",
-  "scripts": {
-    "start": "npm run development -- --watch",
-    "build": "npm run development && npm run production",
-    "development": "cross-env NODE_ENV=development webpack --mode development",
-    "production": "cross-env NODE_ENV=production webpack --mode production"
-  },
-  "keywords": [
-    "custom",
-    "fields"
-  ],
-  "license": "GPL-2.0",
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/plugin-proposal-class-properties": "^7.14.5",
