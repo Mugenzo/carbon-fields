@@ -559,7 +559,7 @@ abstract class Container implements Datastore_Holder_Interface {
 			$segment_group_name = isset( $segment_pieces['group_name'] ) ? $segment_pieces['group_name'] : Group_Field::DEFAULT_GROUP_NAME;
 
 			foreach ( $field_group as $f ) {
-				if ( $f->get_base_name() !== $segment_field_name ) {
+				if ( $f->get_base_name() !== $segment_field_name  && substr_replace( $segment_field_name, "", - 3 ) !== $f->get_base_name() ) {
 					continue;
 				}
 
